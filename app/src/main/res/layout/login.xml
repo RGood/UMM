@@ -1,50 +1,55 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00ffee" >
+    android:background="@drawable/background3" >
 
-      <Button
-          android:id="@+id/button3"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          android:layout_alignParentLeft="true"
-          android:layout_alignParentRight="true"
-          android:layout_marginBottom="36dp"
-          android:background="@color/green"
-          android:text="About Us" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply Madness"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:textSize="36dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
 
-      <EditText
-          android:id="@+id/editText1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentTop="true"
-          android:layout_centerHorizontal="true"
-          android:layout_marginTop="78dp"
-          android:ems="10" 
-          android:text = "Enter Title Here">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_above="@id/about_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-          <requestFocus />
-      </EditText>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create Account"
+            android:id="@id/create_acc_button"
+            android:textSize="24dp" />
 
-      <Button
-          android:id="@+id/button2"
-          android:layout_width="140dp"
-          android:layout_height="80dp"
-          android:layout_above="@+id/button3"
-          android:layout_alignParentLeft="true"
-          android:layout_marginBottom="84dp"
-          android:background="@color/green"
-          android:text="@string/login" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:id="@id/login_button"
+            android:textSize="24dp" />
+    </LinearLayout>
 
-      <Button
-          android:id="@+id/button1"
-          android:layout_width="140dp"
-          android:layout_height="80dp"
-          android:layout_alignBaseline="@+id/button2"
-          android:layout_alignBottom="@+id/button2"
-          android:layout_alignParentRight="true"
-          android:background="@color/green"
-          android:text="@string/create_account" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:id="@id/about_button"
+        android:textSize="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="89dp" />
 
 </RelativeLayout>
