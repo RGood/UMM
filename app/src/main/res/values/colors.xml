@@ -1,0 +1,14 @@
+<resources>
+    <color name="background">#00FFEE</color>
+    
+    <color name="lightblue">#99EAFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blblue">#45DAFF</color>
+    <color name="aqua">#09EF7C</color>
+    <color name="yellowgreen">#CCFF66</color>
+    <color name="orange">#FF9900</color>
+    <color name="black">#000000</color>
+</resources>
