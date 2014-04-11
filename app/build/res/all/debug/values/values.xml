@@ -551,6 +551,7 @@
     <string name="leaderboard_title">Leaderboards!</string>
     <string name="leaders_placeholder">1. You (others WOULD be here)</string>
     <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="practice_title">Practice Mode</string>
     <string name="title">Multiply Madness</string>
     <string name="title_activity_challenge">ChallengeActivity</string>
