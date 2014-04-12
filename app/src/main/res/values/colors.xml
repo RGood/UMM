@@ -10,5 +10,5 @@
     <color name="aqua">#09EF7C</color>
     <color name="yellowgreen">#CCFF66</color>
     <color name="orange">#FF9900</color>
-    <color name="black">#000000</color>
+    <color name="black">#000000</color><color name="white">#FFFFFF</color>
 </resources>
