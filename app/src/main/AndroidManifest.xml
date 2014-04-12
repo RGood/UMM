@@ -46,6 +46,10 @@
             android:name="com.example.umm.app.settings"
             android:label="UMM-App" >
         </activity>
+        <activity
+            android:name="com.example.umm.app.game"
+            android:label="Game" >
+        </activity>
     </application>
 
 </manifest>
