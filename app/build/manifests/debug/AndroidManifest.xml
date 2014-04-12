@@ -1,4 +1,4 @@
-<!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.umm.app">
+<!-- From: file:/C:/Users/Randall/UMM/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.umm.app">
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19"/>
 
     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
@@ -7,14 +7,17 @@
         <activity android:label="@string/app_name" android:name="com.example.umm.app.login_menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:label="@string/app_name" android:name="com.example.umm.app.user_credentials">
         </activity>
-	<activity android:label="@string/title_activity_leaderboard_menu" android:name="com.example.umm.app.LeaderboardMenu">
+        <activity android:label="@string/title_activity_leaderboard_menu" android:name="com.example.umm.app.LeaderboardMenu">
         </activity>
         <activity android:label="@string/title_activity_leaderboard_page" android:name="com.example.umm.app.LeaderboardPage">
+        </activity>
+        <activity android:label="@string/title_activity_challenge" android:name="com.example.umm.app.Challenge">
         </activity>
     </application>
 
