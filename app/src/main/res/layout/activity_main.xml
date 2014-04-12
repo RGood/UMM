@@ -50,6 +50,15 @@
         <Button
             android:layout_width="215dp"
             android:layout_height="30dp"
+            android:text="@string/leaderboard_title"
+            android:id="@+id/leaderboard_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.075"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="215dp"
+            android:layout_height="30dp"
             android:text="@string/action_settings"
             android:id="@+id/settings_button"
             android:layout_gravity="center_horizontal"

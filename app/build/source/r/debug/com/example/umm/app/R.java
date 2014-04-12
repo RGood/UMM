@@ -886,6 +886,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070016;
         public static final int action_menu_presenter=0x7f070017;
         public static final int action_mode_close_button=0x7f070029;
+        public static final int action_settings=0x7f070060;
         public static final int activity_chooser_view_content=0x7f07002a;
         public static final int always=0x7f07000f;
         public static final int back_button=0x7f070018;
@@ -1010,6 +1011,13 @@ containing a value of this type.
         public static final int practice3=0x7f030020;
         public static final int support_simple_spinner_dropdown_item=0x7f030021;
         public static final int user_credentials=0x7f030022;
+    }
+    public static final class menu {
+        public static final int challenge=0x7f0c0000;
+        public static final int leaderboard_menu=0x7f0c0001;
+        public static final int leaderboard_page=0x7f0c0002;
+        public static final int main=0x7f0c0003;
+        public static final int main_menu=0x7f0c0004;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;

@@ -13,6 +13,7 @@ public class main_menu extends Activity {
 
     Button challenge_button;
     Button practice_button;
+    Button leaderboard_button;
     Button settings_button;
     Button logout_button;
 
@@ -60,8 +61,8 @@ public class main_menu extends Activity {
         practice_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(context, user_credentials.class);
-                //startActivity(intent);
+                Intent intent = new Intent(context, practice.class);
+                startActivity(intent);
             }
         });
 
@@ -79,6 +80,15 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, login_menu.class);
+                startActivity(intent);
+            }
+        });
+
+        leaderboard_button = (Button) findViewById(R.id.create_acc_button);
+        leaderboard_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, LeaderboardMenu.class);
                 startActivity(intent);
             }
         });
