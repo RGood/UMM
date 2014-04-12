@@ -36,6 +36,6 @@ public class LeaderboardPage extends Activity {
     }
 
     public void backPage(View v) {
-        finishActivity(0);
+        this.finishActivity(0);
     }
 }
