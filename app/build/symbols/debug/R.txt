@@ -265,9 +265,9 @@ int id activity_chooser_view_content 0x7f07002a
 int id always 0x7f07000f
 int id back_button 0x7f070018
 int id beginning 0x7f07000a
-int id button 0x7f07005f
-int id button2 0x7f070060
-int id button3 0x7f070065
+int id button 0x7f070065
+int id button2 0x7f07005f
+int id button3 0x7f070060
 int id button_login2 0x7f07005d
 int id challenge_back 0x7f070041
 int id challenge_button 0x7f070053

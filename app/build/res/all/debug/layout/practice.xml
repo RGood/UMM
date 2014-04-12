@@ -19,24 +19,11 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/logout"
-        android:id="@+id/button"
-        android:layout_marginBottom="26dp"
-        android:onClick="logout"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/main_menu"
         android:id="@+id/button2"
-        android:onClick="toMainMenu"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
 
     <RadioGroup
         android:layout_width="fill_parent"
@@ -85,9 +72,8 @@
         android:layout_height="wrap_content"
         android:text="@string/start_practice"
         android:id="@+id/button3"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="55dp"
-        android:onClick="beginPractice" />
+        android:onClick="beginPractice"
+        android:layout_alignBottom="@+id/rad"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout><!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/layout/practice.xml -->

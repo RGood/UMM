@@ -38,8 +38,7 @@ public class user_credentials extends Activity{
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, login_menu.class);
-                startActivity(intent);
+                finishActivity(0);
             }
         });
     }
