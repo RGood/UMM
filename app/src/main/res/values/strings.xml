@@ -29,4 +29,9 @@
     <string name="grade6">6th Grade</string>
     <string name="grade7">7th Grade</string>
     <string name="grade8">8th Grade</string>
+
+    <string name="main_menu">Main Menu</string>
+    <string name="easy_practice">Tables 1-6</string>
+    <string name="medium_practice">Tables 7-12</string>
+    <string name="hard_practice">Tables 13-17</string>
 </resources>
