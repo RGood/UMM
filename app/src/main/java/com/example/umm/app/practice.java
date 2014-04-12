@@ -40,46 +40,36 @@ public class practice extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-  /*  public void addListenerOnButtons() {
-        Button backButton;
-
+    public void addListenerOnButtons(){
         final Context context = this;
+        Button easyButton;
+        Button mediumButton;
+        Button hardButton;
 
-        backButton = (Button) findViewById(R.id.button2);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        easyButton = (Button) findViewById(R.id.button);
+        mediumButton = (Button) findViewById(R.id.button2);
+        hardButton = (Button) findViewById(R.id.button3);
+
+        easyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, main_menu.class);
+                Intent intent = new Intent(context, game.class);
                 startActivity(intent);
             }
         });
-    }*/
-
-    public void beginPractice(View v) {
-        final RadioGroup radgrp = (RadioGroup) findViewById(R.id.rad);
-        final RadioButton but1 = (RadioButton) findViewById(R.id.radioButton);
-        final RadioButton but2 = (RadioButton) findViewById(R.id.radioButton2);
-        final RadioButton but3 = (RadioButton) findViewById(R.id.radioButton3);
-
-        int i = radgrp.getCheckedRadioButtonId();
-        if(i == but1.getId()) {
-            beginEasyPractice();
-        } else if(i == but2.getId()) {
-            beginMedPractice();
-        } else if(i == but3.getId()) {
-            beginHardPractice();
-        } else {}
-    }
-
-    void beginEasyPractice() {
-
-    }
-
-    void beginMedPractice() {
-
-    }
-
-    void beginHardPractice() {
-
+        mediumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        hardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
     }
 }
