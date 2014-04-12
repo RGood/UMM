@@ -15,6 +15,8 @@ public class login_menu extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addListenerOnButtons();
         setContentView(R.layout.login);
     }
 
