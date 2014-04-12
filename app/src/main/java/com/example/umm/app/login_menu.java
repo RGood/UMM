@@ -16,11 +16,11 @@ public class login_menu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addListenerOnButtons();
         setContentView(R.layout.login);
+        addListenerOnButtons();
     }
 
-    private void addListenerOnButtons(){
+    public void addListenerOnButtons(){
 
         final Context context = this;
         Button login_button = (Button) findViewById(R.id.login_button);
