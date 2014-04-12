@@ -57,7 +57,7 @@ public class main_menu extends Activity {
             }
         });
 
-        practice_button = (Button) findViewById(R.id.create_acc_button);
+        practice_button = (Button) findViewById(R.id.practice_button);
         practice_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,7 +66,7 @@ public class main_menu extends Activity {
             }
         });
 
-        settings_button = (Button) findViewById(R.id.create_acc_button);
+        settings_button = (Button) findViewById(R.id.settings_button);
         settings_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,7 +75,7 @@ public class main_menu extends Activity {
             }
         });
 
-        logout_button = (Button) findViewById(R.id.create_acc_button);
+        logout_button = (Button) findViewById(R.id.logout_button);
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +84,7 @@ public class main_menu extends Activity {
             }
         });
 
-        leaderboard_button = (Button) findViewById(R.id.create_acc_button);
+        leaderboard_button = (Button) findViewById(R.id.leaderboard_button);
         leaderboard_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
