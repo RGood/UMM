@@ -53,7 +53,6 @@ public class settings extends Activity {
         final Context context = this;
 
         changePassword = (Button) findViewById(R.id.change_password_button);
-
         changePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +60,15 @@ public class settings extends Activity {
                 startActivity(intent);
             }
         });
+
+        sound = (Button) findViewById(R.id.change_password_button);
+        sound.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view){
+                Intent intent = new Intent(context, sound.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
