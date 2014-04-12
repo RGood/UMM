@@ -1,10 +1,14 @@
 package com.example.umm.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 public class practice extends Activity {
@@ -36,14 +40,33 @@ public class practice extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void beginPractice(View v) {
+    public void addListenerOnButtons() {
+        Button backButton;
+
+        final Context context = this;
+
+        backButton = (Button) findViewById(R.id.button2);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, main_menu.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void beginPractice() {
         final RadioGroup radgrp = (RadioGroup)findViewById(R.id.rad);
+        final RadioButton but1 = (RadioButton) findViewById(R.id.radioButton);
+        final RadioButton but2 = (RadioButton) findViewById(R.id.radioButton2);
+        final RadioButton but3 = (RadioButton) findViewById(R.id.radioButton3);
+
         int i = radgrp.getCheckedRadioButtonId();
-        if(i == 1) {
+        if(i == but1.getId()) {
             beginEasyPractice();
-        } else if(i == 2) {
+        } else if(i == but2.getId()) {
             beginMedPractice();
-        } else if(i == 3) {
+        } else if(i == but3.getId()) {
             beginHardPractice();
         } else {}
     }
@@ -59,13 +82,4 @@ public class practice extends Activity {
     void beginHardPractice() {
 
     }
-
-    public void logout(View v) {
-        new login_menu();
-    }
-
-    public void toMainMenu() {
-        new main_menu();
-    }
-
 }
