@@ -1,10 +1,13 @@
 package com.example.umm.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class Challenge extends Activity {
 
@@ -12,6 +15,7 @@ public class Challenge extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_challenge);
+        addListenerOnButtons();
     }
 
 
@@ -33,6 +37,84 @@ public class Challenge extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void addListenerOnButtons(){
+        final Context context = this;
+        Button but1;
+        Button but2;
+        Button but3;
+        Button but4;
+        Button but5;
+        Button but6;
+        Button but7;
+        Button but8;
+
+        but1 = (Button) findViewById(R.id.diff1);
+        but2 = (Button) findViewById(R.id.diff2);
+        but3 = (Button) findViewById(R.id.diff3);
+        but4 = (Button) findViewById(R.id.diff4);
+        but5 = (Button) findViewById(R.id.diff5);
+        but6 = (Button) findViewById(R.id.diff6);
+        but7 = (Button) findViewById(R.id.diff7);
+        but8 = (Button) findViewById(R.id.diff8);
+
+        but1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
+        but8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, game.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void backPage(View v) {

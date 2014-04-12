@@ -59,6 +59,7 @@ public class game extends Activity{
         submit_button = (Button) findViewById(R.id.submit_button);
         question = (TextView) findViewById(R.id.textView_question);
         answer = (TextView) findViewById(R.id.textView_answer);
+        answer.setVisibility(1);
         user_answer = (EditText) findViewById(R.id.editText_answer);
 
         question.setText(mult);
