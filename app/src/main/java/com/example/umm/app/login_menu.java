@@ -30,5 +30,13 @@ public class login_menu extends Activity {
                 startActivity(intent);
             }
         });
+
+        Button create_acc = (Button) findViewById(R.id.create_acc_button);
+        create_acc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
