@@ -18,6 +18,7 @@ public class user_credentials extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_credentials);
+        addListenerOnButtons();
     }
 
     public void addListenerOnButtons(){
