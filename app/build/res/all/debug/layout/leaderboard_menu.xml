@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightblue"
+    android:background="@drawable/background3"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -17,13 +17,15 @@
             android:gravity="center_horizontal"
             android:text="@string/leaderboard_title"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
         
         <Button 
             android:id="@+id/leader_menu_back"
             android:layout_width="40dp"
             android:layout_height="40dp" 
-            android:background="@color/red" />            
+            android:background="@color/red"
+            android:onClick="backPage"/>
             
     </LinearLayout>
     
@@ -32,6 +34,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/leaderboard_description"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="20dp" />
     
     <Button 
@@ -41,7 +44,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade1"
         android:background="@color/blblue"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
     
     <Button 
         android:id="@+id/diff2"
@@ -50,7 +54,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade2"
         android:background="@color/blue"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
 
     <Button 
         android:id="@+id/diff3"
@@ -59,7 +64,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade3"
         android:background="@color/aqua" 
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
     
     <Button 
         android:id="@+id/diff4"
@@ -68,7 +74,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade4"
         android:background="@color/green"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
     
     <Button 
         android:id="@+id/diff5"
@@ -77,7 +84,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade5"
         android:background="@color/yellowgreen"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
     
     <Button 
         android:id="@+id/diff6"
@@ -86,7 +94,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade6"
         android:background="@color/yellow"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
     
     <Button 
         android:id="@+id/diff7"
@@ -95,7 +104,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/grade7"
         android:background="@color/orange"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="findLeaderboard" />
     
     <Button 
         android:id="@+id/diff8"
@@ -103,5 +113,6 @@
         android:layout_height="30dp"
         android:layout_gravity="center_horizontal"
         android:text="@string/grade8"
-        android:background="@color/red" />
+        android:background="@color/red"
+        android:onClick="findLeaderboard" />
 </LinearLayout><!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/layout/leaderboard_menu.xml -->

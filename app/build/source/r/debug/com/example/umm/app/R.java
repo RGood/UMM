@@ -886,18 +886,17 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070016;
         public static final int action_menu_presenter=0x7f070017;
         public static final int action_mode_close_button=0x7f070029;
-        public static final int action_settings=0x7f07005d;
         public static final int activity_chooser_view_content=0x7f07002a;
         public static final int always=0x7f07000f;
         public static final int back_button=0x7f070018;
         public static final int beginning=0x7f07000a;
-        public static final int button=0x7f07004b;
-        public static final int button1=0x7f07005c;
-        public static final int button2=0x7f07004c;
-        public static final int button3=0x7f07004d;
-        public static final int button4=0x7f07004e;
+        public static final int button1=0x7f07005e;
+        public static final int button2=0x7f07005d;
+        public static final int button3=0x7f07005f;
+        public static final int button4=0x7f07005c;
         public static final int button_login2=0x7f070058;
         public static final int challenge_back=0x7f070041;
+        public static final int challenge_button=0x7f07004b;
         public static final int checkbox=0x7f070032;
         public static final int collapseActionView=0x7f070011;
         public static final int create_acc_button=0x7f070019;
@@ -933,10 +932,12 @@ containing a value of this type.
         public static final int list_item=0x7f07002e;
         public static final int login_button=0x7f07001b;
         public static final int login_button2=0x7f07001c;
+        public static final int logout_button=0x7f07004e;
         public static final int middle=0x7f07000b;
         public static final int never=0x7f07000d;
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
+        public static final int practice_button=0x7f07004c;
         public static final int progress_circular=0x7f07001d;
         public static final int progress_horizontal=0x7f07001e;
         public static final int radio=0x7f070034;
@@ -950,6 +951,7 @@ containing a value of this type.
         public static final int search_plate=0x7f07003b;
         public static final int search_src_text=0x7f07003c;
         public static final int search_voice_btn=0x7f070040;
+        public static final int settings_button=0x7f07004d;
         public static final int shortcut=0x7f070033;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
@@ -1009,11 +1011,6 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030021;
         public static final int user_credentials=0x7f030022;
     }
-    public static final class menu {
-        public static final int challenge=0x7f0c0000;
-        public static final int main=0x7f0c0001;
-        public static final int main_menu=0x7f0c0002;
-    }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;
         public static final int abc_action_bar_up_description=0x7f0a0001;
@@ -1056,8 +1053,10 @@ containing a value of this type.
         public static final int practice_title=0x7f0a0026;
         public static final int title=0x7f0a0027;
         public static final int title_activity_challenge=0x7f0a0028;
-        public static final int top_button=0x7f0a0029;
-        public static final int you_button=0x7f0a002a;
+        public static final int title_activity_leaderboard_menu=0x7f0a0029;
+        public static final int title_activity_leaderboard_page=0x7f0a002a;
+        public static final int top_button=0x7f0a002b;
+        public static final int you_button=0x7f0a002c;
     }
     public static final class style {
         /** 

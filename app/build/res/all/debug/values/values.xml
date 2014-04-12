@@ -579,6 +579,8 @@
     <string name="practice_title">Practice Mode</string>
     <string name="title">Multiply Madness</string>
     <string name="title_activity_challenge">ChallengeActivity</string>
+    <string name="title_activity_leaderboard_menu">LeaderboardMenu</string>
+    <string name="title_activity_leaderboard_page">LeaderboardPage</string>
     <string name="top_button">Top</string>
     <string name="you_button">Your Rank</string>
     <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/styles.xml -->

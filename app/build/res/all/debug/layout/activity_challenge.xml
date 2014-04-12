@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightblue"
+    android:background="@drawable/background3"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -17,7 +17,8 @@
             android:gravity="center_horizontal"
             android:text="@string/challenge_title"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
         
         <Button 
             android:id="@+id/challenge_back"
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/challenge_description"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="20dp" />
     
     <Button 
