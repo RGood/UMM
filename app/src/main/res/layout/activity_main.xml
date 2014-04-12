@@ -32,7 +32,7 @@
             android:layout_width="215dp"
             android:layout_height="30dp"
             android:text="@string/challenge_title"
-            android:id="@+id/button"
+            android:id="@+id/challenge_button"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.075"
             android:layout_marginTop="20dp"
@@ -42,7 +42,7 @@
             android:layout_width="215dp"
             android:layout_height="30dp"
             android:text="@string/practice_title"
-            android:id="@+id/button2"
+            android:id="@+id/practice_button"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.075"
             android:layout_marginBottom="20dp" />
@@ -51,7 +51,7 @@
             android:layout_width="215dp"
             android:layout_height="30dp"
             android:text="@string/action_settings"
-            android:id="@+id/button3"
+            android:id="@+id/settings_button"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.075"
             android:layout_marginBottom="20dp" />
@@ -60,7 +60,7 @@
             android:layout_width="215dp"
             android:layout_height="30dp"
             android:text="@string/logout"
-            android:id="@+id/button4"
+            android:id="@+id/logout_button"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.075" />
     </LinearLayout>

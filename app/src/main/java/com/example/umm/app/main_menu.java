@@ -1,16 +1,26 @@
 package com.example.umm.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class main_menu extends Activity {
+
+    Button challenge_button;
+    Button practice_button;
+    Button settings_button;
+    Button logout_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        addListenerOnButtons();
     }
 
 
@@ -32,6 +42,46 @@ public class main_menu extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void addListenerOnButtons(){
+        final Context context = this;
+        challenge_button = (Button) findViewById(R.id.challenge_button);
+
+        challenge_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent intent = new Intent(context, user_credentials.class);
+                //startActivity(intent);
+            }
+        });
+
+        practice_button = (Button) findViewById(R.id.create_acc_button);
+        practice_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent intent = new Intent(context, user_credentials.class);
+                //startActivity(intent);
+            }
+        });
+
+        settings_button = (Button) findViewById(R.id.create_acc_button);
+        settings_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent intent = new Intent(context, user_credentials.class);
+                //startActivity(intent);
+            }
+        });
+
+        logout_button = (Button) findViewById(R.id.create_acc_button);
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, login_menu.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

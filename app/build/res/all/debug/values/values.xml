@@ -503,13 +503,33 @@
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <eat-comment />
+
+    <item name="about_button" type="id"/>
     <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <eat-comment />
+
+    <item name="back_button" type="id"/>
+    <item name="create_acc_button" type="id"/>
+    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <eat-comment />
+
     <item name="home" type="id"/>
+    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <eat-comment />
+
+    <item name="login_button" type="id"/>
+    <item name="login_button2" type="id"/>
+    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <eat-comment />
+
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
 
@@ -537,6 +557,7 @@
     <string name="challenge_description">Please select a difficulty</string>
     <string name="challenge_title">Challenge Mode!</string>
     <string name="create_account">Create Account</string>
+    <string name="easy_practice">Tables 1-6</string>
     <string name="grade1">1st Grade</string>
     <string name="grade2">2nd Grade</string>
     <string name="grade3">3rd Grade</string>
@@ -545,6 +566,7 @@
     <string name="grade6">6th Grade</string>
     <string name="grade7">7th Grade</string>
     <string name="grade8">8th Grade</string>
+    <string name="hard_practice">Tables 13-17</string>
     <string name="hello_world">Hello world!</string>
     <string name="leaderboard_description">Select your desired leaderboard</string>
     <string name="leaderboard_page_title">nth Grade Leaderboard!</string>
@@ -552,6 +574,8 @@
     <string name="leaders_placeholder">1. You (others WOULD be here)</string>
     <string name="login">Login</string>
     <string name="logout">Logout</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="medium_practice">Tables 7-12</string>
     <string name="practice_title">Practice Mode</string>
     <string name="title">Multiply Madness</string>
     <string name="title_activity_challenge">ChallengeActivity</string>
