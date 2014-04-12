@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <attr name="actionBarDivider" format="reference" />
@@ -78,7 +78,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="aqua">#09EF7C</color>
@@ -92,7 +92,7 @@
     <color name="red">#FF0000</color>
     <color name="yellow">#FFFF00</color>
     <color name="yellowgreen">#CCFF66</color>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="ActionBar">
@@ -498,36 +498,36 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="about_button" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="back_button" type="id"/>
     <item name="create_acc_button" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <item name="home" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="login_button" type="id"/>
     <item name="login_button2" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <item name="progress_circular" type="id"/>
@@ -548,7 +548,7 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="about_us">About Us</string>
@@ -577,13 +577,14 @@
     <string name="main_menu">Main Menu</string>
     <string name="medium_practice">Tables 7-12</string>
     <string name="practice_title">Practice Mode</string>
+    <string name="start_practice">Begin</string>
     <string name="title">Multiply Madness</string>
     <string name="title_activity_challenge">ChallengeActivity</string>
     <string name="title_activity_leaderboard_menu">LeaderboardMenu</string>
     <string name="title_activity_leaderboard_page">LeaderboardPage</string>
     <string name="top_button">Top</string>
     <string name="you_button">Your Rank</string>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light">
@@ -597,7 +598,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">

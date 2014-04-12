@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RadioGroup;
 
 public class practice extends ActionBarActivity {
 
@@ -36,13 +37,15 @@ public class practice extends ActionBarActivity {
     }
 
     public void beginPractice(View v) {
-        if() {
+        final RadioGroup radgrp = (RadioGroup)findViewById(R.id.rad);
+        int i = radgrp.getCheckedRadioButtonId();
+        if(i == 1) {
             beginEasyPractice();
-        } else if() {
+        } else if(i == 2) {
             beginMedPractice();
-        } else if() {
+        } else if(i == 3) {
             beginHardPractice();
-        }
+        } else {}
     }
 
     void beginEasyPractice() {
@@ -54,7 +57,7 @@ public class practice extends ActionBarActivity {
     }
 
     void beginHardPractice() {
-        
+
     }
 
     public void logout(View v) {
