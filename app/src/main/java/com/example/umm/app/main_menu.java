@@ -11,11 +11,7 @@ import android.widget.Button;
 
 public class main_menu extends Activity {
 
-    Button challenge_button;
-    Button practice_button;
-    Button leaderboard_button;
-    Button settings_button;
-    Button logout_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +42,20 @@ public class main_menu extends Activity {
     }
 
     public void addListenerOnButtons(){
+        Button challenge_button;
+        Button practice_button;
+        Button leaderboard_button;
+        Button settings_button;
+        Button logout_button;
+
         final Context context = this;
         challenge_button = (Button) findViewById(R.id.challenge_button);
 
         challenge_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(context, user_credentials.class);
-                //startActivity(intent);
+                Intent intent = new Intent(context, Challenge.class);
+                startActivity(intent);
             }
         });
 
@@ -70,8 +72,8 @@ public class main_menu extends Activity {
         settings_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(context, user_credentials.class);
-                //startActivity(intent);
+                Intent intent = new Intent(context, settings.class);
+                startActivity(intent);
             }
         });
 

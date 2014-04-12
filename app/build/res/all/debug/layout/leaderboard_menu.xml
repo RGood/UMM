@@ -115,4 +115,4 @@
         android:text="@string/grade8"
         android:background="@color/red"
         android:onClick="findLeaderboard" />
-</LinearLayout><!-- From: file:/C:/Users/ikeku_000/Documents/GitHub/UMM/app/src/main/res/layout/leaderboard_menu.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/layout/leaderboard_menu.xml -->
