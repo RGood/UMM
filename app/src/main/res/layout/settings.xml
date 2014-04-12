@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/random_grey_variations">
+    android:background="@drawable/random_grey_variations"
+    tools:context=".ChangePassword">
 
 
     <LinearLayout
@@ -31,38 +33,38 @@
             android:layout_width="215dp"
             android:layout_height="40dp"
             android:text="@string/change_password"
-            android:id="@+id/button"
+            android:id="@+id/change_password_button"
             android:layout_weight="0.075"
-            android:layout_alignBaseline="@+id/button2"
-            android:layout_alignBottom="@+id/button2"
+            android:layout_alignBaseline="@+id/sound_button"
+            android:layout_alignBottom="@+id/sound_button"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="110dp" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:text="@string/sound"
+            android:id="@+id/sound_button"
+            android:layout_weight="0.075"
+            android:layout_above="@+id/about_us_button"
+            android:layout_alignLeft="@+id/change_password_button"
+            android:layout_alignStart="@+id/change_password_button"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="215dp"
+            android:layout_height="40dp"
             android:text="@string/about_us"
-            android:id="@+id/button3"
+            android:id="@+id/about_us_button"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp" />
-
-        <Button
-            android:layout_width="215dp"
-            android:layout_height="40dp"
-            android:text="@string/sound"
-            android:id="@+id/button2"
-            android:layout_weight="0.075"
-            android:layout_above="@+id/button3"
-            android:layout_alignLeft="@+id/button"
-            android:layout_alignStart="@+id/button"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 
