@@ -1,13 +1,13 @@
 package com.example.umm.app;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioGroup;
 
-public class practice extends ActionBarActivity {
+public class practice extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
