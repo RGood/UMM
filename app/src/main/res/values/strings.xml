@@ -34,6 +34,7 @@
     <string name="easy_practice">Tables 1-6</string>
     <string name="medium_practice">Tables 7-12</string>
     <string name="hard_practice">Tables 13-17</string>
+    <string name="start_practice">Begin</string>
     <string name="title_activity_leaderboard_menu">LeaderboardMenu</string>
     <string name="title_activity_leaderboard_page">LeaderboardPage</string>
 </resources>
