@@ -40,7 +40,7 @@ public class practice extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void addListenerOnButtons() {
+  /*  public void addListenerOnButtons() {
         Button backButton;
 
         final Context context = this;
@@ -53,10 +53,10 @@ public class practice extends Activity {
                 startActivity(intent);
             }
         });
-    }
+    }*/
 
-    public void beginPractice() {
-        final RadioGroup radgrp = (RadioGroup)findViewById(R.id.rad);
+    public void beginPractice(View v) {
+        final RadioGroup radgrp = (RadioGroup) findViewById(R.id.rad);
         final RadioButton but1 = (RadioButton) findViewById(R.id.radioButton);
         final RadioButton but2 = (RadioButton) findViewById(R.id.radioButton2);
         final RadioButton but3 = (RadioButton) findViewById(R.id.radioButton3);
