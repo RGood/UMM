@@ -26,8 +26,9 @@ public class game extends Activity{
     EditText user_answer;
     int x1;
     int x2;
-    static int result;
-    static int count = 0;
+    int result = 0;
+    int count = 0;
+    String mult;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,21 +36,23 @@ public class game extends Activity{
         setContentView(R.layout.game);
         addListenerOnButtons();
     }
+
+    /*
+       Here the number is generated. This is hardcoded for the prototype.
+       Furthermore, for the prototype the number is not within the given
+       range.
+        */
     private String newQuestion(){
         Random rand = new Random();
         x1 = rand.nextInt(17);
         x2 = rand.nextInt(17);
-        String mult = ""+x1+"*"+x2;
+        mult = ""+x1+"*"+x2;
         return mult;
     }
     public void addListenerOnButtons(){
 
         final Context context = this;
-        /*
-        Here the number is generated. This is hardcoded for the prototype.
-        Furthermore, for the prototype the number is not within the given
-        range.
-         */
+
 
         String mult = newQuestion();
 
@@ -73,23 +76,27 @@ public class game extends Activity{
                     answer.setText("Wrong");
                 }
 
-                try {
-                    Thread.sleep(500);
-                } catch (Exception e) {
+                try{
+                    Thread.sleep(1000);
+                }
+                catch( Exception e){
                     e.printStackTrace();
                 }
-                if( count < 10){
-                    String mult = newQuestion();
-                    question.setText(mult);
-                    user_answer.setText("");
-                    answer.setText("");
-                    count++;
+                count++;
+
+                if( count == 10){
+                    question.setText("You got "+result+" out of"+count+" right!");
+                    count = 0;
+                    result = 0;
                 }
                 else{
-                    question.setText("You got "+result+" out of 10 right!");
+                    String newmult = newQuestion();
+                    question.setText(newmult);
+                    user_answer.setText("");
+                    answer.setText("");
                 }
+
             }
         });
-
     }
 }
