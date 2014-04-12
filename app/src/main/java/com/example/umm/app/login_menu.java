@@ -13,6 +13,8 @@ import android.widget.Button;
  */
 public class login_menu extends Activity {
 
+    Button login_button;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -23,7 +25,7 @@ public class login_menu extends Activity {
     public void addListenerOnButtons(){
 
         final Context context = this;
-        Button login_button = (Button) findViewById(R.id.login_button);
+        login_button = (Button) findViewById(R.id.login_button);
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override

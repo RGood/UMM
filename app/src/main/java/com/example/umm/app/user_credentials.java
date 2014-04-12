@@ -13,8 +13,33 @@ import android.widget.Button;
  */
 public class user_credentials extends Activity{
 
+    Button login;
+    Button back;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_credentials);
+    }
+
+    public void addListenerOnButtons(){
+
+        final Context context = this;
+        login = (Button) findViewById(R.id.login_button2);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, main_menu.class);
+                startActivity(intent);
+            }
+        });
+
+        back = (Button) findViewById(R.id.back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, login_menu.class);
+                startActivity(intent);
+            }
+        });
     }
 }
