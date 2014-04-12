@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Multiply Madness"
-        android:id="@id/textView1"
+        android:id="@id/textView"
         android:textSize="36dp"
         android:textColor="#ffffff"
         android:textStyle="bold|italic"
@@ -42,7 +42,7 @@
         android:textSize="40dp"
         android:layout_marginTop="98dp"
         android:textColor="#ffffff"
-        android:layout_below="@id/textView1"
+        android:layout_below="@id/textView"
         android:layout_centerHorizontal="true" />
 
     <TextView
