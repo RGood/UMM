@@ -53,7 +53,7 @@ public class game extends Activity{
         answer = (TextView) findViewById(R.id.textView_answer);
         user_answer = (EditText) findViewById(R.id.editText_answer);
 
-        question.setText(multFinal,0,-1);
+        question.setText(mult);
 
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,10 +61,10 @@ public class game extends Activity{
                 int num1 = Integer.parseInt(user_answer.getText().toString());
                 int num2 = x1*x2;
                 if( num1 == num2 ){
-                    answer.setText("Correct".toCharArray(), 0, -1);
+                    answer.setText("Correct");
                 }
                 else{
-                    answer.setText("Wrong".toCharArray(),0,-1);
+                    answer.setText("Wrong");
                 }
 
             }
