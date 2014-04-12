@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.umm.app" >
 
@@ -33,9 +35,10 @@
             android:label="@string/title_activity_leaderboard_page" >
         </activity>
         <activity
-            android:name="com.example.umm.app.ChangePassword"
-            android:label="@string/title_activity_change_password" >
+            android:name="com.example.umm.app.Challenge"
+            android:label="@string/title_activity_challenge" >
         </activity>
     </application>
 
 </manifest>
+
