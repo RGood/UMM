@@ -533,6 +533,13 @@
 
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <eat-comment />
+
+    <item name="submit_button" type="id"/>
+    <item name="textView_game" type="id"/>
+    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <eat-comment />
 
     <integer name="abc_max_action_buttons">2</integer>
 
@@ -591,6 +598,7 @@
     <string name="title_activity_change_password">ChangePassword</string>
     <string name="title_activity_leaderboard_menu">LeaderboardMenu</string>
     <string name="title_activity_leaderboard_page">LeaderboardPage</string>
+    <string name="title_activity_sound">sound</string>
     <string name="top_button">Top</string>
     <string name="you_button">Your Rank</string>
     <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/styles.xml -->

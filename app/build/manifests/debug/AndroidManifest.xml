@@ -19,7 +19,15 @@
         </activity>
         <activity android:label="@string/title_activity_challenge" android:name="com.example.umm.app.Challenge">
         </activity>
-        <activity android:label="PracticeActivity" android:name="com.example.umm.app.practice">
+        <activity android:label="UMM-App" android:name="com.example.umm.app.practice">
+        </activity>
+        <activity android:label="UMM-App" android:name="com.example.umm.app.settings">
+        </activity>
+        <activity android:label="Game" android:name="com.example.umm.app.game">
+        </activity>
+        <activity android:label="@string/title_activity_sound" android:name="com.example.umm.app.sound">
+        </activity>
+        <activity android:label="@string/title_activity_change_password" android:name="com.example.umm.app.ChangePassword">
         </activity>
     </application>
 

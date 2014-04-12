@@ -60,43 +60,45 @@ public class game extends Activity{
         question = (TextView) findViewById(R.id.textView_question);
         answer = (TextView) findViewById(R.id.textView_answer);
         answer.setVisibility(1);
-        user_answer = (EditText) findViewById(R.id.editText_answer);
+        user_answer = (EditText) findViewById(R.id.Text_answer);
 
         question.setText(mult);
 
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(user_answer.getText().toString().matches("")){
+                    return;
+                }
                 int num1 = Integer.parseInt(user_answer.getText().toString());
                 int num2 = x1 * x2;
+                String response = "";
                 if (num1 == num2) {
-                    answer.setText("Correct");
+                    //response = "Right!";
                     result++;
-                }
-                else {
-                    answer.setText("Wrong");
+                } else {
+                    //response = "Wrong!";
                 }
 
-                try{
-                    Thread.sleep(1000);
-                }
-                catch( Exception e){
-                    e.printStackTrace();
-                }
                 count++;
 
-                if( count == 10){
-                    question.setText("You got "+result+" out of"+count+" right!");
+                if (count == 10) {
+                    question.setText("You got " + result + " out of" + count + " right!");
                     count = 0;
                     result = 0;
-                }
-                else{
+                } else {
+
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
                     String newmult = newQuestion();
                     question.setText(newmult);
                     user_answer.setText("");
                     answer.setText("");
                 }
-
             }
         });
     }
