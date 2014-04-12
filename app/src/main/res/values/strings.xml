@@ -37,6 +37,11 @@
     <string name="settings">Settings</string>
     <string name="change_password">Change Password</string>
     <string name="sound">Sound</string>
-    <string name="title_activity_change_password">ChangePassword</string><string name="old_password">Old Password</string><string name="new_password">New Password</string><string name="reenter_new_pass">Reenter New Password</string><string name="submit">Submit</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="reenter_new_pass">Reenter New Password</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_sound">sound</string>
 
 </resources>
