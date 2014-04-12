@@ -2,13 +2,13 @@
 <merger>
 
     <dataSet config="ComAndroidSupportAppcompatV71901.aar" >
-        <source path="C:\Users\Jeremy\Documents\GitHub\UMM\app\build\exploded-bundles\ComAndroidSupportAppcompatV71901.aar\assets" />
+        <source path="C:\Users\Randall\UMM\app\build\exploded-bundles\ComAndroidSupportAppcompatV71901.aar\assets" />
     </dataSet>
     <dataSet config="main" >
-        <source path="C:\Users\Jeremy\Documents\GitHub\UMM\app\src\main\assets" />
+        <source path="C:\Users\Randall\UMM\app\src\main\assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\Jeremy\Documents\GitHub\UMM\app\src\debug\assets" />
+        <source path="C:\Users\Randall\UMM\app\src\debug\assets" />
     </dataSet>
 
 </merger>
