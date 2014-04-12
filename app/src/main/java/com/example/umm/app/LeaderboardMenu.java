@@ -41,6 +41,6 @@ public class LeaderboardMenu extends Activity {
     }
 
     public void backPage(View v) {
-
+        finishActivity(0);
     }
 }

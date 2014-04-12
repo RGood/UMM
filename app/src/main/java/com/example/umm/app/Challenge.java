@@ -36,6 +36,6 @@ public class Challenge extends Activity {
     }
 
     public void backPage(View v) {
-        finish();
+        finishActivity(0);
     }
 }
