@@ -15,16 +15,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_menu"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="53dp" />
-
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -73,7 +63,8 @@
         android:text="@string/start_practice"
         android:id="@+id/button3"
         android:onClick="beginPractice"
-        android:layout_alignBottom="@+id/rad"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp" />
 
 </RelativeLayout>
