@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -25,6 +26,8 @@ public class game extends Activity{
     EditText user_answer;
     int x1;
     int x2;
+    static int result;
+    static int count = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,13 @@ public class game extends Activity{
         setContentView(R.layout.game);
         addListenerOnButtons();
     }
-
+    private String newQuestion(){
+        Random rand = new Random();
+        x1 = rand.nextInt(17);
+        x2 = rand.nextInt(17);
+        String mult = ""+x1+"*"+x2;
+        return mult;
+    }
     public void addListenerOnButtons(){
 
         final Context context = this;
@@ -41,12 +50,8 @@ public class game extends Activity{
         Furthermore, for the prototype the number is not within the given
         range.
          */
-        Random rand = new Random();
-        x1 = rand.nextInt(17);
-        x2 = rand.nextInt(17);
-        String mult = ""+x1+"*"+x2;
-        char[] multFinal = mult.toCharArray();
 
+        String mult = newQuestion();
 
         submit_button = (Button) findViewById(R.id.submit_button);
         question = (TextView) findViewById(R.id.textView_question);
@@ -59,24 +64,30 @@ public class game extends Activity{
             @Override
             public void onClick(View view) {
                 int num1 = Integer.parseInt(user_answer.getText().toString());
-                int num2 = x1*x2;
-                if( num1 == num2 ){
+                int num2 = x1 * x2;
+                if (num1 == num2) {
                     answer.setText("Correct");
+                    result++;
                 }
-                else{
+                else {
                     answer.setText("Wrong");
                 }
 
-            }
-        });
-
-        button_next = (Button) findViewById(R.id.button_next);
-        button_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, user_credentials.class);
-                finishActivity(0);
-                startActivity(intent);
+                try {
+                    Thread.sleep(500);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                if( count < 10){
+                    String mult = newQuestion();
+                    question.setText(mult);
+                    user_answer.setText("");
+                    answer.setText("");
+                    count++;
+                }
+                else{
+                    question.setText("You got "+result+" out of 10 right!");
+                }
             }
         });
 
