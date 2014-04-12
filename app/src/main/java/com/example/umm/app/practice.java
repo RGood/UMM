@@ -36,7 +36,25 @@ public class practice extends ActionBarActivity {
     }
 
     public void beginPractice(View v) {
+        if() {
+            beginEasyPractice();
+        } else if() {
+            beginMedPractice();
+        } else if() {
+            beginHardPractice();
+        }
+    }
 
+    void beginEasyPractice() {
+
+    }
+
+    void beginMedPractice() {
+
+    }
+
+    void beginHardPractice() {
+        
     }
 
     public void logout(View v) {
