@@ -11,14 +11,12 @@ import android.widget.Button;
 
 public class settings extends Activity {
 
-    Button changePassword;
-    Button sound;
-    Button aboutUs;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings);
+        setContentView(R.layout.activity_settings);
         addButtonListeners();
     }
 
@@ -50,6 +48,10 @@ public class settings extends Activity {
     }
 
     public void addButtonListeners(){
+        Button changePassword;
+        Button sound;
+        Button aboutUs;
+
         final Context context = this;
 
         changePassword = (Button) findViewById(R.id.change_password_button);
@@ -69,7 +71,13 @@ public class settings extends Activity {
             }
         });
 
-
+        aboutUs = (Button) findViewById(R.id.about_us_button);
+        aboutUs.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(context, aboutUs.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
