@@ -1,11 +1,15 @@
 package com.example.umm.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class sound extends Activity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +37,7 @@ public class sound extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }

@@ -7,4 +7,6 @@
     <item name="login_button2" type="id"/>
     <item name="textView_game" type="id"/>
     <item name="submit_button" type="id"/>
+    <item name="about_us_title" type="id">About Us</item>
+    <item name="about_us_okbutton" type="id" />
 </resources>

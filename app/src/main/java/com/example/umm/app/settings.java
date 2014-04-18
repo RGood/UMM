@@ -63,7 +63,7 @@ public class settings extends Activity {
             }
         });
 
-        sound = (Button) findViewById(R.id.change_password_button);
+        sound = (Button) findViewById(R.id.sound_button);
         sound.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view){
                 Intent intent = new Intent(context, sound.class);

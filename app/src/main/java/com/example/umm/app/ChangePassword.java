@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +17,7 @@ public class ChangePassword extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
-        addButtonListeners();
+
     }
 
 
@@ -40,17 +41,19 @@ public class ChangePassword extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void addButtonListeners(){
+    public void submitPassData(View view){
         Button submit;
         final Context context = this;
 
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         alertDialogBuilder.setTitle("Success");
         alertDialogBuilder.setCancelable(false);
         alertDialogBuilder.setMessage("Your password has been successfully changed.");
         alertDialogBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
+                Intent switchToSettings = new Intent(ChangePassword.this, settings.class);
+                ChangePassword.this.startActivity(switchToSettings);
             }
         });
 
@@ -64,9 +67,16 @@ public class ChangePassword extends Activity {
         //});
 
 
+                AlertDialog  alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
+                //returnToSettings();
 
 
+    }
 
+    public void returnToSettings(){
+        Intent switchToSettings = new Intent(ChangePassword.this, settings.class);
+        ChangePassword.this.startActivity(switchToSettings);
     }
 
 }
