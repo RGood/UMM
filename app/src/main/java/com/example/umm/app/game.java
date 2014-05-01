@@ -29,11 +29,16 @@ public class game extends Activity{
     int result = 0;
     int count = 0;
     String mult;
+    String currentUserName;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.game);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            currentUserName = extras.getString("currentUserName");
+        }
         addListenerOnButtons();
     }
 

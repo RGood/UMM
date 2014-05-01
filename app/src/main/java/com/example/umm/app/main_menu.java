@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,11 +13,16 @@ import android.widget.Button;
 
 public class main_menu extends Activity {
 
+    String currentUserName;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            currentUserName = extras.getString("currentUserName");
+        }
         setContentView(R.layout.activity_main);
         addListenerOnButtons();
     }
@@ -55,6 +62,7 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, Challenge.class);
+                intent.putExtra("currentUserName", currentUserName);
                 startActivity(intent);
             }
         });
@@ -64,6 +72,7 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, practice.class);
+                intent.putExtra("currentUserName", currentUserName);
                 startActivity(intent);
             }
         });
@@ -72,7 +81,10 @@ public class main_menu extends Activity {
         settings_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(context, settings.class);
+                intent.putExtra("currentUserName", currentUserName);
+                Log.i("Main Menu", currentUserName);
                 startActivity(intent);
             }
         });
@@ -82,6 +94,8 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, login_menu.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
@@ -91,9 +105,12 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, LeaderboardMenu.class);
+                intent.putExtra("currentUserName", currentUserName);
                 startActivity(intent);
             }
         });
     }
+
+
 
 }

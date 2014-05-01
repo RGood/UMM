@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,15 +12,22 @@ import android.widget.Button;
 
 public class settings extends Activity {
 
-
+    private String currentUserName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            currentUserName = extras.getString("currentUserName");
+        }
         setContentView(R.layout.activity_settings);
         addButtonListeners();
     }
 
+    public String getCurrentUserName(){
+        return currentUserName;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -41,11 +49,6 @@ public class settings extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void changePassword(View view){
-        Intent switchToPass = new Intent(settings.this, ChangePassword.class);
-        settings.this.startActivity(switchToPass);
-
-    }
 
     public void addButtonListeners(){
         Button changePassword;
@@ -59,6 +62,8 @@ public class settings extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, ChangePassword.class);
+                intent.putExtra("currentUserName", currentUserName);
+                Log.i("Settings", currentUserName);
                 startActivity(intent);
             }
         });
@@ -81,4 +86,6 @@ public class settings extends Activity {
 
 
     }
+
+
 }

@@ -9,4 +9,22 @@
     <item name="submit_button" type="id"/>
     <item name="about_us_title" type="id">About Us</item>
     <item name="about_us_okbutton" type="id" />
+    <item name="oldPassword" type="id">oldPassword</item>
+    <item name="newPassword" type="id">newPassword</item>
+    <item name="newPassword2" type="id">newPassword2</item>
+    <item name="loginUserName" type="id">loginUserName</item>
+    <item name="loginPassword" type="id">loginPassword</item>
+    <item name="createUsernameField" type="id">createUserNameField</item>
+    <item name="createPasswordField" type="id">createPasswordField</item>
+    <item name="username" type="id">username</item>
+    <item name="password" type="id">password</item>
+    <item name="name" type="id">name</item>
+    <item name="newPassfield" type="id">newPassfield</item>
+    <item name="createAccountPassField" type="id">createAccountPassField</item>
+    <item name="createAccountPassField2" type="id">createAccountPassField2</item>
+    <item name="changePassNew2" type="id">changePassNew2</item>
+    <item name="changePassNew1" type="id">changePassNew1</item>
+    <item name="changePassOld" type="id">changePassOld</item>
+    <item name="changePassNewPass1" type="id">changePassNewPass1</item>
+    <item name="textView2" type="id">textView2</item>
 </resources>

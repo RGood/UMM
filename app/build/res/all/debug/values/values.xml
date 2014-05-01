@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <attr name="actionBarDivider" format="reference" />
@@ -78,7 +78,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/colors.xml -->
     <eat-comment />
 
     <color name="aqua">#09EF7C</color>
@@ -93,7 +93,7 @@
     <color name="white">#FFFFFF</color>
     <color name="yellow">#FFFF00</color>
     <color name="yellowgreen">#CCFF66</color>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="ActionBar">
@@ -499,49 +499,76 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="about_button" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <item name="about_us_okbutton" type="id"/>
+    <item name="about_us_title" type="id">About Us</item>
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="back_button" type="id"/>
+    <item name="changePassNew1" type="id">changePassNew1</item>
+    <item name="changePassNew2" type="id">changePassNew2</item>
+    <item name="changePassNewPass1" type="id">changePassNewPass1</item>
+    <item name="changePassOld" type="id">changePassOld</item>
+    <item name="createAccountPassField" type="id">createAccountPassField</item>
+    <item name="createAccountPassField2" type="id">createAccountPassField2</item>
+    <item name="createPasswordField" type="id">createPasswordField</item>
+    <item name="createUsernameField" type="id">createUserNameField</item>
     <item name="create_acc_button" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <item name="home" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
+    <item name="loginPassword" type="id">loginPassword</item>
+    <item name="loginUserName" type="id">loginUserName</item>
     <item name="login_button" type="id"/>
     <item name="login_button2" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <item name="name" type="id">name</item>
+    <item name="newPassfield" type="id">newPassfield</item>
+    <item name="newPassword" type="id">newPassword</item>
+    <item name="newPassword2" type="id">newPassword2</item>
+    <item name="oldPassword" type="id">oldPassword</item>
+    <item name="password" type="id">password</item>
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/ids.xml -->
     <eat-comment />
 
     <item name="submit_button" type="id"/>
+    <item name="textView2" type="id">textView2</item>
     <item name="textView_game" type="id"/>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <item name="username" type="id">username</item>
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <integer name="abc_max_action_buttons">2</integer>
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="ReenterPass">Reenter Password</string>
+    <string name="Username">Username</string>
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
+    <eat-comment />
 
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -556,7 +583,7 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="about_us">About Us</string>
@@ -585,8 +612,10 @@
     <string name="logout">Logout</string>
     <string name="main_menu">Main Menu</string>
     <string name="medium_practice">Tables 7-12</string>
+    <string name="name">Name</string>
     <string name="new_password">New Password</string>
     <string name="old_password">Old Password</string>
+    <string name="password">Password</string>
     <string name="practice_title">Practice Mode</string>
     <string name="reenter_new_pass">Reenter New Password</string>
     <string name="settings">Settings</string>
@@ -596,12 +625,13 @@
     <string name="title">Multiply Madness</string>
     <string name="title_activity_challenge">ChallengeActivity</string>
     <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_create_account">createAccount</string>
     <string name="title_activity_leaderboard_menu">LeaderboardMenu</string>
     <string name="title_activity_leaderboard_page">LeaderboardPage</string>
     <string name="title_activity_sound">sound</string>
     <string name="top_button">Top</string>
     <string name="you_button">Your Rank</string>
-    <!-- From: file:/C:/Users/Randall/UMM/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light">
@@ -615,7 +645,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/C:/Users/Randall/UMM/app/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jeremy/Documents/GitHub/UMM/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values/values.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">

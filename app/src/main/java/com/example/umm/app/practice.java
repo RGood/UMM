@@ -8,16 +8,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+
 
 public class practice extends Activity {
-
+    String currentUserName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.practice);
         addListenerOnButtons();
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            currentUserName = extras.getString("currentUserName");
+        }
     }
 
 
@@ -55,6 +58,7 @@ public class practice extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, game.class);
+                intent.putExtra("currentUserName", currentUserName);
                 startActivity(intent);
             }
         });
@@ -62,6 +66,7 @@ public class practice extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, game.class);
+                intent.putExtra("currentUserName", currentUserName);
                 startActivity(intent);
             }
         });
@@ -69,6 +74,7 @@ public class practice extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, game.class);
+                intent.putExtra("currentUserName", currentUserName);
                 startActivity(intent);
             }
         });
