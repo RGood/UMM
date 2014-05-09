@@ -48,5 +48,8 @@
     <string name="password">Password</string>
     <string name="name">Name</string>
     <string name="ReenterPass">Reenter Password</string>
+    <string name="about_description">Multiply Madness v1.0.
+        Created by the French Toast Mafia. copyright 2014.
+    This application is free to all. If you paid for it, you were cheated.</string>
 
 </resources>

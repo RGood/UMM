@@ -58,6 +58,10 @@
             android:label="@string/title_activity_change_password" >
         </activity>
         <activity
+            android:name="com.example.umm.app.aboutUs"
+            android:label="@string/about_us" >
+        </activity>
+        <activity
             android:name="com.example.umm.app.createAccount"
             android:label="@string/title_activity_create_account"
             >
