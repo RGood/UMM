@@ -27,4 +27,5 @@
     <item name="changePassOld" type="id">changePassOld</item>
     <item name="changePassNewPass1" type="id">changePassNewPass1</item>
     <item name="textView2" type="id">textView2</item>
+    <item name="button_prompt" type="id">button_prompt</item>
 </resources>

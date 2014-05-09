@@ -3,6 +3,7 @@ package com.example.umm.app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,7 +23,7 @@ public class game extends Activity{
     Button submit_button;
     Button button_next;
     TextView question;
-    TextView answer;
+    Button button_prompt;
     EditText user_answer;
     int x1;
     int x2;
@@ -63,11 +64,39 @@ public class game extends Activity{
 
         submit_button = (Button) findViewById(R.id.submit_button);
         question = (TextView) findViewById(R.id.textView_question);
-        answer = (TextView) findViewById(R.id.textView_answer);
-        answer.setVisibility(1);
+        button_prompt = (Button) findViewById(R.id.button_prompt);
+        button_prompt.setVisibility(0);
         user_answer = (EditText) findViewById(R.id.Text_answer);
-
         question.setText(mult);
+
+        button_prompt.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                user_answer.setBackgroundColor(Color.WHITE);
+                if (count == 10) {
+                    question.setText("You got " + result + " out of" + count + " right!");
+                    submit_button.setVisibility(View.INVISIBLE);
+                    button_prompt.setText("Main Menu");
+                    count++;
+
+                }
+                else if(count==11){
+                    Intent intent = new Intent(game.this, main_menu.class);
+                    startActivity(intent);
+                }
+                else {
+
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    String newmult = newQuestion();
+                    question.setText(newmult);
+                    user_answer.setText("");
+                }
+            }
+        });
 
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,31 +108,17 @@ public class game extends Activity{
                 int num2 = x1 * x2;
                 String response = "";
                 if (num1 == num2) {
-                    //response = "Right!";
+                    user_answer.setBackgroundColor(Color.GREEN);
+                    user_answer.setText("RIGHT!");
                     result++;
                 } else {
-                    //response = "Wrong!";
+                    user_answer.setBackgroundColor(Color.RED);
+                    user_answer.setText("WRONG");
                 }
 
                 count++;
-
-                if (count == 10) {
-                    question.setText("You got " + result + " out of" + count + " right!");
-                    count = 0;
-                    result = 0;
-                } else {
-
-                    try {
-                        Thread.sleep(1000);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-
-                    String newmult = newQuestion();
-                    question.setText(newmult);
-                    user_answer.setText("");
-                    answer.setText("");
-                }
+                TextView counter = (TextView) findViewById(R.id.textView2);
+                counter.setText(""+count);
             }
         });
     }
